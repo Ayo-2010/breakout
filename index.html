@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breakout — Candy Smash</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="page">
+<header class="hero">
+<div class="hero-copy">
+<p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Sugar rush arcade</p>
+<h1>Breakout</h1>
+<p class="lede">Crack the candy wall. Keep the ball sweet.</p>
+</div>
+<div class="stats" aria-label="Game statistics">
+<div class="stat stat-score">
+<span>Score</span>
+<strong id="score">0</strong>
+</div>
+<div class="stat stat-high">
+<span>High score</span>
+<strong id="highScore">0</strong>
+</div>
+<div class="stat stat-lives">
+<span>Lives</span>
+<strong id="lives" aria-label="3 lives">♥♥♥</strong>
+</div>
+<div class="stat stat-level">
+<span>Level</span>
+<strong id="level">1 / 3</strong>
+</div>
+</div>
+</header>
+<section class="game-layout">
+<div class="stage-column">
+<div class="stage">
+<canvas id="canvas" width="480" height="640" aria-label="Breakout board"></canvas>
+<div class="overlay" id="overlay" hidden>
+<span class="overlay-kicker">Candy report</span>
+<h2 id="overlayText">You win</h2>
+<p class="overlay-note" id="overlayNote">Score 0</p>
+<button id="playAgainBtn" class="btn btn-primary" type="button">Play again</button>
+</div>
+</div>
+<div class="control-deck">
+<div class="deck-buttons">
+<button id="startBtn" class="btn btn-primary" type="button">Start game</button>
+<button id="pauseBtn" class="btn btn-secondary" type="button" disabled>Pause</button>
+</div>
+<p class="hint">Move: mouse / touch / ← → or A D · Pause: P or Space</p>
+</div>
+</div>
+<aside class="side-panel">
+<div class="menu-card">
+<p class="menu-kicker">Concession stand</p>
+<h2>Score menu</h2>
+<ul class="menu-list">
+<li>
+<span><i class="chip chip-pink" aria-hidden="true"></i>One brick</span>
+<b>+10</b>
+</li>
+<li>
+<span><i class="chip chip-mint" aria-hidden="true"></i>Level cleared</span>
+<b>+250</b>
+</li>
+<li>
+<span><i class="chip chip-sun" aria-hidden="true"></i>Three levels</span>
+<b>Win</b>
+</li>
+</ul>
+<p class="menu-note">Lives are hard candy. You only get three, so mind the edges.</p>
+</div>
+<div class="tip-card">
+<span class="tip-icon" aria-hidden="true">✦</span>
+<p>Hit the ball with the edge of the paddle for a sharper angle.</p>
+</div>
+</aside>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
