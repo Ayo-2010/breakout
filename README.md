@@ -13,6 +13,8 @@ A bright candy-coated brick breaker with three levels, three lives and a high-sc
 - Win and lose overlays with a play-again button
 - High score saved locally between sessions
 
+- A How to play popup with the controls and scoring rules.
+
 ## Running it
 
 Open `index.html` in a browser. There is no build step and no dependencies to install.

@@ -51,6 +51,7 @@
 <div class="deck-buttons">
 <button id="startBtn" class="btn btn-primary" type="button">Start game</button>
 <button id="pauseBtn" class="btn btn-secondary" type="button" disabled>Pause</button>
+<button id="helpBtn" class="btn btn-secondary" type="button">How to play</button>
 </div>
 <p class="hint">Move: mouse / touch / ← → or A D · Pause: P or Space</p>
 </div>
@@ -82,6 +83,24 @@
 </aside>
 </section>
 </main>
+
+  <div class="help-modal" id="helpModal" hidden>
+    <div class="help-backdrop" data-close></div>
+    <div class="help-dialog" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <button class="help-close" id="helpClose" type="button" aria-label="Close">×</button>
+      <h2 class="help-title" id="helpTitle">How to play</h2>
+      <p class="help-lede">Clear three walls of candy bricks without losing all three lives.</p>
+      <ol class="help-steps">
+        <li>Press <kbd>Start game</kbd>, then move the paddle with the mouse, touch, <kbd>←</kbd>/<kbd>→</kbd> or <kbd>A</kbd>/<kbd>D</kbd>.</li>
+        <li>Bounce the ball into the bricks. Each brick is worth ten points.</li>
+        <li>Where the ball meets the paddle changes its angle, so use the edges for sharper shots.</li>
+        <li>Clear every brick to reach the next level, worth 250 points, with a faster ball.</li>
+        <li>You have three lives. Every missed ball costs one.</li>
+        <li>Clear all three levels to win. Press <kbd>P</kbd> or <kbd>Space</kbd> to pause.</li>
+      </ol>
+    </div>
+  </div>
+
 <script src="script.js"></script>
 </body>
 </html>
